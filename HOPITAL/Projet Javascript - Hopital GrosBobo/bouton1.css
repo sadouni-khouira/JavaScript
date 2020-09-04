@@ -1,0 +1,193 @@
+* {
+    font-family: 'Arvo', serif;
+}
+
+body {
+    background-color: rgb(228, 228, 228);
+}
+
+
+/************************************************************/
+
+.btnmainCheville {
+    position: absolute;
+    top: 400px;
+    left: 110px;
+    background-color: black;
+    padding: 1em;
+    font-size: 6pt;
+    color: white;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.btnmainCheville:hover {
+    background-color: red;
+}
+
+
+/**************************************************/
+
+.btnmainEpaul {
+    position: absolute;
+    top: 80px;
+    left: 20px;
+    background-color: black;
+    padding: 1em;
+    font-size: 8pt;
+    color: white;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.btnmainEpaul:hover {
+    background-color: red;
+}
+
+
+/***************************************************/
+
+.btnmainCoude {
+    position: absolute;
+    top: 150px;
+    left: 150px;
+    background-color: black;
+    padding: 1em;
+    font-size: 6pt;
+    color: white;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.btnmainCoude:hover {
+    background-color: red;
+}
+
+
+/*********************************************************/
+
+.btnmainPoignet {
+    position: absolute;
+    top: 200px;
+    left: 2px;
+    background-color: black;
+    padding: 1em;
+    font-size: 6pt;
+    color: white;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.btnmainPoignet:hover {
+    background-color: red;
+}
+
+
+/******************************************************/
+
+.btnmainHanche {
+    position: absolute;
+    top: 220px;
+    left: 120px;
+    background-color: black;
+    padding: 1em;
+    font-size: 6pt;
+    color: white;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.btnmainHanche:hover {
+    background-color: red;
+}
+
+
+/**************************************************************/
+
+.btnmainGenou {
+    position: absolute;
+    top: 310px;
+    left: 100x;
+    background-color: black;
+    padding: 1em;
+    font-size: 7pt;
+    color: white;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.btnmainGenou:hover {
+    background-color: red;
+}
+
+
+/*********************************************************************/
+
+.overlay {
+    position: absolute;
+    background-color: gray;
+    left: 0px;
+    top: 0px;
+    background-color: rgb(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.regrouper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.centrer {
+    text-align: center;
+}
+
+img {
+    width: 200px;
+    height: 478px;
+    /*position: absolute;*/
+    left: 700px;
+    top: 100px;
+}
+
+#title2 {
+    width: 200px;
+    height: 500px;
+    text-justify: auto;
+}
+
+#title1 {
+    width: 200px;
+    height: 500px;
+    text-justify: auto;
+}
+
+#title3 {
+    width: 200px;
+    height: 500px;
+    text-justify: auto;
+}
+
+#title4 {
+    width: 200px;
+    height: 500px;
+    text-justify: auto;
+}
+
+#title5 {
+    width: 200px;
+    height: 500px;
+    text-justify: auto;
+}
+
+#title6 {
+    width: 200px;
+    height: 500px;
+    text-justify: auto;
+}
+
+.BOUTONS {
+    position: relative;
+}
