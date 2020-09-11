@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Exercice 7</title>
+    <meta charset="utf-8">
+
+
+
+</head>
+
+<body>
+    <button onclick="myFunction1()"> Ajouter nom </button>
+    <button onclick="myFunction2()">  Le nom gagnant</button>
+    <script type="text/javascript">
+        //     Une fonction qui ajoute un nom saisi par l'utilisateur via une boite de dialogue dans un tableau.
+        var array = ["alain", "khouira", "aicha", "mathurin"];
+
+        function myFunction1() {
+
+            a = prompt("Ajouter nom");
+            array.push(a);
+            console.log("le tableau : ", array);
+        }
+
+        // Une fonction qui renvoie au hasard le nom gagnant et qui sera exécutée lorsque l'utilisateur clique sur le  bouton "tirage au sort".
+        function myFunction2() {
+
+            b = Math.floor(Math.random() * array.length);
+
+            console.log(" Le gagnant est " + array[b] + ' sa position est ' + (b + 1));
+        }
+    </script>
+</body>
+
+</html>

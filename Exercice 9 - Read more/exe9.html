@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Exercice 9</title>
+    <meta charset="utf-8">
+
+</head>
+
+<style>
+    .decor {
+        border: 2px solid black;
+        width: 400px;
+        height: 150px;
+        margin-top: 50px;
+        margin-left: 300px;
+        padding: 5px;
+    }
+</style>
+
+<body>
+
+    <div id="textcourt">
+
+        <p> Lorem ipsum ...</p>
+    </div>
+    <button id="btn" onclick="myFunction()">Lire plus</button>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("textcourt");
+            var z = document.getElementById("btn");
+            if (z.style.display === "none") {
+                x.style.display = "block"
+                z.style.display = "block"
+            } else {
+                x.style.display = "none"
+                z.style.display = "none"
+                var newDiv = document.createElement("div");
+                const para = "Le lorem ipsum est, en imprimerie, une suite de mots sans signification utilisée à titre provisoire pour calibrer une mise en page, le texte définitif venant remplacer le faux-texte dès qu'il est prêt ou que la mise en page est achevée. Généralement, on utilise un texte en faux latin, le Lorem ipsum ou Lipsum"
+                newDiv.innerHTML = para;
+                newDiv.classList.add("decor")
+                newDiv.style.textAlign = "center";
+                document.body.appendChild(newDiv)
+
+            }
+        }
+    </script>
+
+</body>
+
+</html>
