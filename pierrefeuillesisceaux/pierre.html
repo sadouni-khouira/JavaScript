@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name=viewport content="width=device-width, initial-scale=1">
+    <title>Pierre Feuille Ciseaux</title>
+    <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+    <!---<link rel="stylesheet" href="css/style.css">--->
+    <link rel="stylesheet" href="csspierre.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+
+
+</head>
+
+<body>
+    <header>
+        <h1>Pierre feuille ciseaux</h1>
+    </header>
+
+    <div class="container">
+        <div id="pfc">
+            <button type="button" name="pierre" id="pierre"><i class="fas fa-hand-rock"></i></button>
+            <button type="button" name="feuille" id="feuille"><i class="fas fa-hand-paper"></i></button>
+            <button type="button" name="ciseaux" id="ciseaux"><i class="fas fa-hand-scissors"></i></button>
+        </div>
+        <div>
+            <p id="partie"></p>
+            <h2 id="result"></h2>
+        </div>
+
+
+    </div>
+    <script type="text/javascript">
+        const pierre = document.querySelector('#pierre'),
+            feuille = document.querySelector('#feuille'),
+            ciseaux = document.querySelector('#ciseaux'),
+
+            result = document.querySelector("#result"),
+            partie = document.querySelector("#partie"),
+
+
+            Tab = [pierre, feuille, ciseaux];
+
+        Tab.forEach((btn) => {
+            btn.addEventListener("click", function() {
+                jeu(this.id);
+            })
+
+        })
+
+        function jeu(id) {
+            let i = Math.floor(Math.random() * Tab.length),
+                computer = Tab[i].id,
+                user = id;
+
+            partie.textContent = "Utilisatuer a joué : " + user + "  //     Ordinateur a joué : " + computer;
+
+            if ((user == "ciseaux" && computer == "feuille") ||
+                (user == "feuille" && computer == "pierre") ||
+                (user == "pierre" && computer == "ciseaux")) {
+                result.textContent = "Gagné !";
+            } else if (computer == user) {
+                result.textContent = "Égalité !";
+            } else {
+                result.textContent = "Perdu !";
+            }
+        }
+    </script>
+</body>
+
+</html>
